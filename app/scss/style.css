@@ -1,0 +1,29 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.das {
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  padding: 9px;
+  margin: 9px;
+  font-weight: 700;
+}
+
+.sdfsaf {
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
