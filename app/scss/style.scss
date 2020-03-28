@@ -3,6 +3,9 @@
 @import "fonts";
 
 // START HEADER
+.header{
+  background-color: #fff;
+}
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -101,6 +104,7 @@
   }
 }
 .basket{
+  margin-right: 20px;
   span{
     background-color: $green;
   }
@@ -133,7 +137,6 @@
     }
 }
 .user{
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -197,6 +200,7 @@
   height: 0;
   overflow: hidden;
   transition: all .3s;
+  z-index: 1;
 }
 .basket__box,
 .message__box,
@@ -303,7 +307,10 @@
     border-radius: 50%;
   }
 }
-
+.header__btn-menu,
+.menu__btn{
+  display: none;
+}
 // end header
 // start search
 .search {
@@ -1148,3 +1155,9 @@
 
 
 // end product page
+
+
+
+
+
+@import "media";
