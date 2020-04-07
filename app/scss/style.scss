@@ -312,6 +312,115 @@
   display: none;
 }
 // end header
+
+// start modal
+#modal{
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.login__title{
+  text-align: center;
+  font-size: 48px;
+  @include f700;
+  color: #fff;
+  margin-bottom: 42px;
+  text-transform: uppercase;
+}
+.login__wrapper{
+  form{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  input{
+    height: 43px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 20px;
+    display: block;
+    width: 100%;
+    &::placeholder{
+      color: #fff;
+      font-size: 14px;
+    }
+    &::before{
+      color: #fff;
+    }
+  }
+  label{
+    position: relative;
+    display: block;
+    width: 100%;
+    &::before{
+      position: absolute;
+      font-family: 'icomoon';
+      color: #fff;
+      font-size: 14px;
+      left: 18px;
+      top: 9px;
+    }
+
+  }
+  .login__label-pass::before{
+    content: "\f023";
+  }
+  .login__label-name::before{
+    content: "\f007";  
+  }
+  button{
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    text-transform: uppercase;
+    width: 140px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    color: #000;
+    @include f700;
+    border: none;
+    cursor: pointer;
+  }
+  .creat-acc{
+    background-color: #76ae36;
+    width: 244px;
+    padding: 15px 0 15px 66px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    &::before{
+      content: "\f044";
+      font-family: 'icomoon';
+      font-size: 18px;
+      padding-right: 12px;
+      position: absolute;
+      top: 16px;
+      left: 36px;
+    }
+  }
+  .fancybox-button svg path {
+    fill: #fff;
+  }
+}
+.lost-pass{
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+
+
+// end modal
+
+
+
+
 // start search
 .search {
   background-repeat: no-repeat;
@@ -1229,7 +1338,7 @@
     height: 50px;
     position: relative;
     & + a{
-      margin-right: 3px; 
+      margin-left: 3px; 
     }
     &::before{
       color: #fff;
