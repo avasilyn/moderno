@@ -1588,13 +1588,15 @@ span.tab.active {
 // start page-404
 
 .page-404__wrapper,
-.about__wrapper{
+.about__wrapper,
+.contact__wrapper{
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 150px;
 }
 .page-404__head,
-.about__head{
+.about__head,
+.contact__head{
   font-size: 24px;
   color: #444;
   @include f500;
@@ -1654,8 +1656,6 @@ span.tab.active {
   
 }
 
-
-
 // end page-404
 
 // start about
@@ -1680,6 +1680,117 @@ span.tab.active {
 
 
 // end about
+// start contacts
+
+
+.contact__head{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contact__inner {
+  padding: 32px 40px 15px;
+}
+.contact__map {
+  margin-bottom: 50px;
+  
+  iframe{
+    height: 414px;
+    width: 100%;
+  }
+}
+.contact__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__info {
+  margin-right: 30px;
+  padding-left: 40px;
+}
+.contact__info-content {
+  color: #707070;
+  max-width: 230px;
+}
+.contact__info-item {
+  margin-bottom: 30px;
+}
+.contact__info-title {
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  font-family: 'Roboto',serif !important;
+  @include f500;
+  color: $bg;
+  &::after{
+    content: '';
+    width: 44px;
+    height: 4px;
+    background-color: $green;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+   }
+   &::before{
+    font-family: 'icomoon' !important;
+    color: $green;
+    font-size: 24px;
+    position: absolute;
+    left: -40px;
+  }
+}
+
+.contact__form-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact__form-title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 23px;
+  @include f500;
+}
+.contact__form {
+  width: 100%;
+  max-width: 730px;
+  input{
+    border: none;
+    height: 43px;
+    display: block;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #f1f4f5;
+    width: 350px;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #7a7a7a;
+    }
+  }
+  textarea{
+    border: none;
+    padding: 13px 17px;
+    background-color: #f1f4f5;
+    height: 190px;
+    width: 100%;
+    display: block;
+    resize: none;
+    &::placeholder{
+      color: #7a7a7a;
+    }
+  }
+  button{
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    @include f700;
+    padding: 20px 5px;
+    width: 190px;
+    background-color: $green;
+    margin-top: 22px;
+  }
+}
+// end contacts
 
 
 
